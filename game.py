@@ -1,8 +1,9 @@
 from goblin import Goblin
-
+from hero import Hero
 
 ARENA_NAME = "The Void"
-
+hero = Hero("Loki-(L1130)")
+hero2 = Hero("spare")
 
 def main():
     """Open the arena and introduce its first opponent."""
@@ -15,7 +16,17 @@ def main():
     
     print(f"{goblin.name} enters the arena with {goblin.health} health.")
     print(f"{goblin2.name} enters the arena with {goblin2.health} health.")
-    print("But no hero has answered the call... yet.")
+    print(f"{hero.name} enters the arena with {hero.health} health.")
+
+    print("")
+
+    goblin.take_damage(hero.attack())
+
+    print("")
+
+    if goblin.is_alive:
+        hero.take_damage(goblin.attack())
+ # type: ignore
 
 
 if __name__ == "__main__":
