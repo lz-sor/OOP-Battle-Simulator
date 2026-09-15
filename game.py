@@ -55,6 +55,10 @@ def main():
 
     battle(hero, goblin)
 
+    print("Hope you're happy with yourself, 'hero'.")
+    print("")
+    print("Tutorial Over.")
+
  # type: ignore
 
 
