@@ -3,7 +3,6 @@ from hero import Hero
 
 ARENA_NAME = "The Void"
 hero = Hero("Loki-(L1130)")
-hero2 = Hero("spare")
 
 goblin = Goblin("Variant")
 goblin2 = Goblin("Variant 2")
